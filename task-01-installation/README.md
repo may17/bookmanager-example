@@ -32,3 +32,7 @@ create vue erzeugt immer eine kleine Demo. Diese wollen wir aber nicht. Daher mÃ
   - [ ] `src/assets/*` - Alle Dateien im Ordner
   - [ ] `src/stores/counter.ts`
   - [ ] `src/components/*` - Alle Ordner und Dateien im Ordner.
+
+## Task: Done Signal
+
+- [ ] Schreibe in den Zoom Chat 01-Done wenn du fertig bist

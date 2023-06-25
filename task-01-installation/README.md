@@ -35,4 +35,4 @@ create vue erzeugt immer eine kleine Demo. Diese wollen wir aber nicht. Daher mÃ
 
 ## Task: Done Signal
 
-- [ ] Schreibe in den Zoom Chat 01-Done wenn du fertig bist
+- [ ] Schreibe in den Zoom Chat `task-01 done` wenn du fertig bist

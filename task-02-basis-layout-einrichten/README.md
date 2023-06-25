@@ -15,7 +15,8 @@ In diesem Task wirst du das Basis Layout Aufbauen. Im Ordner `resources`stehen d
 
 - [ ] Erstelle in deinem Projekt Verzeichnis `src/components` eine neue Komponente `LayoutHeader.vue`
   - [ ] Füge den Inhalt aus der Datei [resources/LayoutHeaderTemplate.html](resources/LayoutHeaderTemplate.html) in den Template Block deiner `LayoutHeader.vue` Komponente.
-- [ ] Registriere die Komponente in der `App.vue` und sorge dafür das sie angezeigt wird.
+- [ ] Falls noch vorhanden entferne den `nav` Block mit den beiden RouterLinks. 
+- [ ] Registriere die Komponente in der `App.vue` und sorge dafür das sie vor der `RouterView` Component angezeigt wird.
 
 ## Sub Task: Main Content Area
 

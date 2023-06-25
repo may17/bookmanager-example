@@ -1,3 +1,8 @@
 <template>
-  <h1>Welcome</h1>
+  <h1>Booklist</h1>
+  <section class="row">
+    <div class="column">
+      <p>Derzeit liegen keine Bücher vor</p>
+    </div>
+  </section>
 </template>

@@ -10,7 +10,7 @@ In diesem Task wirst du überhalb der Bücherliste eine Suchfunktion einbauen um
   - Verwende ein `computed property` zum aktualisieren der Liste
     - Tipp 1: [MDN Docs String includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
     - Tipp 2: [MDN Docs Array filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-- Wenn das computed property keine Ergebnisse beinhaltet sollte die Tabelle Ausgeblendet werden und stattdessen ein Text angezeigt werden `Sorry, deine Suche hat keine Treffer ergeben.`
+- Wenn das computed property keine Ergebnisse beinhaltet sollte die Tabelle ausgeblendet werden und stattdessen ein Text angezeigt werden `Sorry, deine Suche hat keine Treffer ergeben.`
 
 ## Task complete
 

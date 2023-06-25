@@ -1,7 +1,13 @@
 <template>
+  <section class="row filter-search">
+    <form action="#" class="column">
+      <label for="search">Search by Title</label>
+      <input type="text" id="search" v-model="currentFilter" />
+    </form>
+  </section>
   <section class="row">
     <div class="column">
-      <table>
+      <table v-if="filteredBooks.length > 0">
         <thead>
           <tr>
             <th>Title</th>
@@ -11,7 +17,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="book of books" :key="book.id">
+          <tr v-for="book of filteredBooks" :key="book.id">
             <td>{{ book.title }}</td>
             <td>{{ book.isbn }}</td>
             <td>{{ book.author }}</td>
@@ -19,6 +25,7 @@
           </tr>
         </tbody>
       </table>
+      <p v-else>No results for your search</p>
     </div>
   </section>
 </template>
@@ -31,11 +38,22 @@ type BooksModel = Book[] | []
 
 interface BookListData {
   books: BooksModel
+  currentFilter: string
 }
 
 export default defineComponent({
   data(): BookListData {
-    return { books: [] }
+    return { books: [], currentFilter: '' }
+  },
+  computed: {
+    filteredBooks(): BooksModel {
+      return this.books.filter((book) => {
+        const normalizedTitle = book.title.toLowerCase()
+        const normalizedFilter = this.currentFilter.toLowerCase()
+
+        return normalizedTitle.includes(normalizedFilter)
+      })
+    }
   },
   created() {
     fetch('http://localhost:4730/books')

@@ -3,7 +3,6 @@
   <section class="row">
     <div class="column">
       <BookList />
-      <p>Derzeit liegen keine Bücher vor</p>
     </div>
   </section>
 </template>

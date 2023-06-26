@@ -14,6 +14,7 @@
             <th>ISBN</th>
             <th>Author</th>
             <th>Publisher</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -22,6 +23,11 @@
             <td>{{ book.isbn }}</td>
             <td>{{ book.author }}</td>
             <td>{{ book.publisher }}</td>
+            <td>
+              <RouterLink class="button" :to="{ name: 'book-detail', params: { id: book.id } }"
+                >Detail</RouterLink
+              >
+            </td>
           </tr>
         </tbody>
       </table>

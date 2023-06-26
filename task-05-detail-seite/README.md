@@ -5,7 +5,7 @@ In diesem Task wirst du eine Detailseite einbinden damit man sich pro Buch alle 
 ## Subtask: Detailseite anlegen und Route registrieren
 
 - Erstelle eine neue View Komponente `BookDetailView.vue` im Ordner `src/views`.
-- Kopiere in den Template Bereich der `BookDetailView.vue` Komponente [dieses HTMl Template](https://raw.githubusercontent.com/may17/bookmanager-example/tasks/task-05-detail-seite/resources/BookDetailTemplate.html).
+- Kopiere in den Template Bereich der `BookDetailView.vue` Komponente [dieses HTML Template](https://raw.githubusercontent.com/may17/bookmanager-example/tasks/task-05-detail-seite/resources/BookDetailTemplate.html).
 - Öffne die Datei `src/router.ts` und erstelle für die `BookDetailView.vue` eine neue Route `/book-detail`.
   - Vergiss das `name` property nicht.
 - Kontrolliere deine Arbeit indem du im Browser die route `/book-detail` in deinem Webbrowser aufrufst. Du solltest dann eine Detailseite sehen.

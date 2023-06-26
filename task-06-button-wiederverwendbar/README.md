@@ -14,7 +14,7 @@ In diesem Task wirst du eine Button Komponente erstellen um die Buttons in der L
     - Sorge dafür das der button einen [dieser Stile](https://milligram.io/#buttons) bekommt
     - Erlaubt ist nur der Value `default`, `outline` oder `clear`
     - Das Prop ist Optional und sollte als default Wert "default" als variant verwenden
-  - prop `route`
+  - prop `to`
     - Wird verwendet um das `to` prop des RouterLinks zu steuern
     - Ist Pflicht
     - Erwartet eine Route Object wie `{ name: 'home' }`

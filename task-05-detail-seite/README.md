@@ -12,7 +12,7 @@ In diesem Task wirst du eine Detailseite einbinden damit man sich pro Buch alle 
 
 ## Subtask: Daten für Detailseite von Api laden
 
-- Füge der `/books` route einen parameter `id` hinzu.
+- Füge der neuen `/book-detail` route einen parameter `id` hinzu.
 - Öffne die `BookDetailView.vue` und lade mit Hilfe des Parameters `id` die Details eines Buches und render diese.
   - Zum testen: Gib einen id parameter in die URL z.B. `http:localhost:3000/book-detail/1001606140805`
   - Verwende die fetch api.

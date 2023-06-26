@@ -20,6 +20,7 @@ In diesem Task wirst du eine Detailseite einbinden damit man sich pro Buch alle 
   - Über `http://localhost:4730/books/<ID>` erhälst du die Details zu einem Buch von der API. Z.B.
     http://localhost:4730/books/1001606140805
   - Über `this.$route.params` kannst du die Parameter aus der Url auslesen.
+  - Beim Bild hilft dir das attribute Binding mit `v-bind:src`
 
 ## Subtask: Detail Button einbauen
 

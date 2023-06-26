@@ -1,4 +1,4 @@
-# Task 04: Detailseite
+# Task 05: Detailseite
 
 In diesem Task wirst du eine Detailseite einbinden damit man sich pro Buch alle vorhandenen Details anzeigen lassen kann.
 
@@ -27,13 +27,13 @@ In diesem Task wirst du eine Detailseite einbinden damit man sich pro Buch alle 
 
 - Öffne die Komponente `src/components/BookList.vue` und füge in der Tabelle eine neue Spalte hinzu
   - Im Head und Body der Tabelle
-- Verwende die Globale `router-link` Komponente um in der neuen Spalte im `tbody` eine Verlinkung zur Detailseite hinzuzufügen
+- Verwende die Globale `RouterLink` Komponente um in der neuen Spalte im `tbody` eine Verlinkung zur Detailseite hinzuzufügen
   - Verwende das `name` property der route
-- Gib dem `router-link` ein `class` html attribute mit dem CSS Class Wert `button` für das Styling
+- Gib dem `RouterLink` ein `class` html attribute mit dem CSS Class Wert `button` für das Styling
 
 ## Subtask: Back Button einbauen
 
-- Öffne die Komponente `src/views/BookDetailView.vue` und Tausche das `a html tag` für den Back Button gegen eine `router-link` Komponente und verlinke auf die Bücher Auflisten Seite
+- Öffne die Komponente `src/views/BookDetailView.vue` und Tausche das `a html tag` für den Back Button gegen eine `RouterLink` Komponente und verlinke auf die Bücher Auflisten Seite
 - Für das Styling füge die css Klassen `button button-outline` hinzu.
 
 ## Task complete

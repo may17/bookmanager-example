@@ -14,7 +14,7 @@ In diesem Task wirst du eine Detailseite einbinden damit man sich pro Buch alle 
 
 - Füge in der `router.ts` neuen `/book-detail` route einen parameter `id` hinzu.
 - Öffne die `BookDetailView.vue` und lade mit Hilfe des Parameters `id` die Details eines Buches und render diese.
-  - Vergiss nicht TypeScript zu verwenden
+  - Vergiss nicht TypeScript zu verwenden. Das `Book` interface steht unter `@/types` bereit.
   - Zum testen: Gib einen id parameter in die URL z.B. `http:localhost:3000/book-detail/1001606140805`
   - Verwende die fetch api.
   - Speichere die Daten der Api in einem data property z.B. book.

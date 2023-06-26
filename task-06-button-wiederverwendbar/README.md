@@ -18,6 +18,7 @@ In diesem Task wirst du eine Button Komponente erstellen um die Buttons in der L
     - Wird verwendet um das `to` prop des RouterLinks zu steuern
     - Ist Pflicht
     - Erwartet eine Route Object wie `{ name: 'home' }`
+    - Das Interface kannst du dir über `import type { RouteLocationNamedRaw } from 'vue-router'` laden
 - Registriere die Komponente Global und nutze sie in der `src/components/BookList.vue` und der `src/views/BookDetailView.vue` anstelle der bereits vorhandenen RouterLinks
 - Tipp: Du brauchst keine Custom Events für die Umsetzung
 

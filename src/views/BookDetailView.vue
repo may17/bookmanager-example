@@ -18,7 +18,7 @@
           <li><strong>Pages:</strong> {{ book.numPages }}</li>
         </ul>
 
-        <RouterLink class="button button-outline" :to="{ name: 'home' }">Back</RouterLink>
+        <BaseButtonLink variant="outline" text="Back" :to="{ name: 'home' }" />
       </div>
       <div class="column column-33">
         <img :src="book.cover" alt="" />

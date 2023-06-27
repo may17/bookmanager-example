@@ -37,6 +37,7 @@ import { defineComponent } from 'vue'
 import type { Book } from '@/types'
 
 import SearchField from '@/components/SearchField.vue'
+import { useBooksStore } from '@/store/useBooksStore'
 
 type BooksModel = Book[] | []
 
@@ -46,6 +47,13 @@ interface BookListData {
 }
 
 export default defineComponent({
+  setup() {
+    const store = useBooksStore()
+
+    return {
+      store
+    }
+  },
   components: {
     SearchField
   },
@@ -54,7 +62,7 @@ export default defineComponent({
   },
   computed: {
     filteredBooks(): BooksModel {
-      return this.books.filter((book) => {
+      return this.store.books.filter((book) => {
         const normalizedTitle = book.title.toLowerCase()
         const normalizedFilter = this.currentFilter.toLowerCase()
 
@@ -66,13 +74,6 @@ export default defineComponent({
     handleSearchValueChange(currentSearchValue: string) {
       this.currentFilter = currentSearchValue
     }
-  },
-  created() {
-    fetch('http://localhost:4730/books')
-      .then((response) => response.json())
-      .then((bookData: BooksModel): void => {
-        this.books = bookData
-      })
   }
 })
 </script>

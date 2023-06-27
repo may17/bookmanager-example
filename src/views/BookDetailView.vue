@@ -29,21 +29,20 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import type { Book } from '@/types'
-
-interface BookDetailViewData {
-  book: Book | null
-}
+import { useBooksStore } from '@/store/useBooksStore'
 
 export default defineComponent({
-  data(): BookDetailViewData {
+  setup() {
+    const store = useBooksStore()
+
     return {
-      book: null
+      store
     }
   },
-  async created() {
-    const response = await fetch('http://localhost:4730/books/' + this.$route.params.id)
-    this.book = await response.json()
+  computed: {
+    book() {
+      return this.store.books.find((book) => book.id === this.$route.params.id)
+    }
   }
 })
 </script>

@@ -1,10 +1,5 @@
 <template>
-  <section class="row filter-search">
-    <form action="#" class="column">
-      <label for="search">Search by Title</label>
-      <input type="text" id="search" v-model="currentFilter" />
-    </form>
-  </section>
+  <SearchField @search-value-changed="handleSearchValueChange" />
   <section class="row">
     <div class="column">
       <table v-if="filteredBooks.length > 0">
@@ -41,6 +36,8 @@
 import { defineComponent } from 'vue'
 import type { Book } from '@/types'
 
+import SearchField from '@/components/SearchField.vue'
+
 type BooksModel = Book[] | []
 
 interface BookListData {
@@ -49,6 +46,9 @@ interface BookListData {
 }
 
 export default defineComponent({
+  components: {
+    SearchField
+  },
   data(): BookListData {
     return { books: [], currentFilter: '' }
   },
@@ -60,6 +60,11 @@ export default defineComponent({
 
         return normalizedTitle.includes(normalizedFilter)
       })
+    }
+  },
+  methods: {
+    handleSearchValueChange(currentSearchValue: string) {
+      this.currentFilter = currentSearchValue
     }
   },
   created() {

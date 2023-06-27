@@ -16,6 +16,7 @@ In diesem Task wirst mit Hilfe von pinia requests an die api reduzieren.
 - Öffne die `src/views/BookDetailView.vue` und entferne dort das fetch und den created hook.
   - Importiere `useBooksStore` in die `BookDetailView.vue` und lade in der setup methode den store.
   - Erstelle ein computed property `book` und suche dir aus dem Store das jeweilige Buch mit Hilfe von `this.$route.params.id`
+    - Die [Array Methode find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) wird dir helfen 
 
 ## Task complete
 
